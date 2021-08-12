@@ -17,3 +17,15 @@
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
+
+cd package/lean
+git clone https://github.com/jerrykuku/lua-maxminddb.git
+git clone https://github.com/xiaorouji/openwrt-passwall.git
+rm -rf luci-theme-argon
+rm -rf luci-app-dockerman
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
+git clone https://github.com/lisaac/luci-app-dockerman.git
+git clone https://github.com/lisaac/luci-in-docker.git
+git clone https://github.com/destan19/OpenAppFilter.git
+git clone https://github.com/jefferymvp/luci-app-koolproxyR
+git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git
